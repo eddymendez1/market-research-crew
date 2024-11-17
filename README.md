@@ -1,6 +1,6 @@
-# MarketingCrew Crew
+# Your Personal Go-To-Market Research Team
 
-Welcome to the MarketingCrew Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to the Go-To-Market Research Team project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
 
@@ -21,6 +21,7 @@ crewai install
 ### Customizing
 
 **Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your Reddit API keys into the `.env` file**
 
 - Modify `src/marketing_crew/config/agents.yaml` to define your agents
 - Modify `src/marketing_crew/config/tasks.yaml` to define your tasks

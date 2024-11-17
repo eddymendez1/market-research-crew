@@ -1,0 +1,40 @@
+research_task:
+  description: >
+    Analyze the specified subreddit to identify significant problems and opportunities:
+    1. Find recurring complaints and frustrations
+    2. Identify posts where users express willingness to pay for solutions
+    3. Look for problems that affect a substantial portion of the community
+    4. Find evidence of failed or inadequate existing solutions
+    5. Collect specific quotes that demonstrate the problems
+    For each problem, gather multiple supporting quotes and engagement metrics.
+  expected_output: >
+    A detailed analysis of at least 10 potential problems, each including:
+    - Problem description and scope
+    - 3-5 representative quotes from different users
+    - Engagement metrics (upvotes, comments, frequency of mention)
+    - Evidence of willingness to pay
+    - Current solutions and their limitations
+    - Estimated affected user base
+  agent: researcher
+
+reporting_task:
+  description: >
+    Evaluate and rank the identified problems to determine the top 5 business opportunities.
+    Create a comprehensive analysis using the following opportunity score formula:
+    Score = (Market Size x Monetization Potential x User Pain Level) / (Technical Complexity + Competition)
+    
+    For each opportunity, provide detailed justification and implementation suggestions.
+  expected_output: >
+    A markdown report including:
+    - Top 5 opportunities ranked by opportunity score
+    - For each opportunity:
+      * Problem overview with supporting quotes
+      * Market size estimation
+      * Monetization strategy
+      * Technical complexity assessment
+      * Competitive analysis
+      * Suggested MVP features
+      * Potential challenges and risks
+      * Growth potential
+    Format as clean markdown without code blocks
+  agent: reporting_analyst
